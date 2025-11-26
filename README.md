@@ -40,7 +40,7 @@ The contract demonstrates the use of:
 ## 📁 File Structure
 
 ```
-📦 MyContract
+📦 AcademicStudentLedger
  ┣ 📜 MyContract.sol
  ┗ 📜 README.md
 ```
