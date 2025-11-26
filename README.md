@@ -37,6 +37,18 @@ The contract demonstrates the use of:
 
 ---
 
+## 🔒 Permission Matrix
+
+| Function              | Owner | Assistant | Student |
+|----------------------|:-----:|:---------:|:-------:|
+| setTA                | ✔     | ✘         | ✘       |
+| recordStudentScore   | ✘     | ✔         | ✘       |
+| getMyScore           | ✔(self) | ✔(self) | ✔(self) |
+| viewScore            | ✔     | ✔         | ✔(self) |
+| transferOwnership    | ✔     | ✘         | ✘       |
+
+---
+
 ## 📁 File Structure
 
 ```
@@ -44,5 +56,24 @@ The contract demonstrates the use of:
  ┣ 📜 MyContract.sol
  ┗ 📜 README.md
 ```
+
+---
+## 🚀 How to Deploy (Remix)
+
+1. Open **Remix IDE**  
+   https://remix.ethereum.org  
+2. Upload `MyContract.sol`  
+3. Select compiler version **0.8.30 or above**  
+4. Compile the contract  
+5. Deploy using “Cancun”  
+6. After deployment:
+   - `owner` will be set as your wallet address  
+   - Use `setTA(address)` to set the TA  
+   - TA can call `recordScore(address, uint8)`
+
+---
+
+## 📄 License
+This project is licensed under the **MIT License**.
 
 ---
